@@ -60,7 +60,7 @@
    * spacing
    */
 
-  --section-padding: 100px;
+  --section-padding: 65px;
 
   /**
    * shadow
@@ -217,7 +217,7 @@ a {
 
 .section-subtitle {
   color: var(--orange-soda);
-  font-size: var(--fs-5);
+  font-size: var(--fs-8);
   font-weight: var(--fw-600);
   padding: 5px 20px;
   background: hsla(9, 100%, 62%, 0.1);
@@ -795,7 +795,7 @@ a {
 .property-card .card-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   row-gap: 15px;
 }
 
@@ -1250,7 +1250,7 @@ a {
   }
 
   .has-scrollbar {
-    gap: 25px;
+    gap: 12px;
     margin-inline: -25px;
     padding-inline: 25px;
     scroll-padding-left: 25px;
@@ -1785,3 +1785,214 @@ a {
   width: 24px;
 }
 
+/* Add this CSS code to your existing stylesheet */
+
+/*-----------------------------------*\
+  #PLAN
+\*-----------------------------------*/
+
+.plan {
+  background: var(--cultured-2);
+  padding-block: var(--section-padding);
+}
+
+.plan .container {
+  text-align: center; /* Center content within the container */
+}
+
+.plan .section-title {
+  margin-bottom: 40px;
+}
+
+.plan-gallery {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center;
+  gap: 20px;
+}
+
+.plan-card {
+  width: 100%; /* Each card takes the full width of the screen */
+  max-width: 1000px; /* Maximum width for each card */
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plan-card a {
+  display: block;
+}
+
+.plan-card .plan-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensure images don't exceed their natural size */
+  border-radius: 8px; /* Add a border-radius for a nicer look */
+  box-shadow: var(--shadow-2);
+  transition: transform 0.3s ease; /* Add a subtle hover effect */
+}
+
+.plan-card:hover .plan-image {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+.plan-card h3 {
+  margin-top: 15px; /* Increase the top margin for better spacing */
+  font-size: 2rem; /* Adjust the font size for the text */
+  font-weight: var(--fw-600);
+  color: var(--dark-jungle-green);
+}
+
+/* Adjust the max-width for larger images in the new tab */
+.plan-card a img {
+  width: 100vw; /* Each card takes the full width of the screen */
+  max-width: 1200px; /* Maximum width for each card */
+  height: auto;
+}
+
+/*-----------------------------------*\
+  #UNITS
+\*-----------------------------------*/
+
+.units {
+  padding-block: var(--section-padding);
+  max-width: unset;
+}
+.unit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.unit-card {
+  flex: 1 0 calc(33.33% - 20px); /* Cards take up one-third of the width with 20px gap */
+  border: 1px solid var(--alice-blue);
+  box-shadow: var(--shadow-2);
+}
+
+.unit-card .card-banner {
+  position: relative;
+  aspect-ratio: 2 / 1.5;
+  overflow: hidden;
+}
+
+.unit-card .card-banner a {
+  height: 100%;
+}
+
+.unit-card .card-banner img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.unit-card:hover .card-banner img {
+  transform: scale(1.1);
+}
+
+.unit-card .card-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, hsla(0, 0%, 0%, 0.95), transparent 30%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.unit-card .banner-actions {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  gap: 15px 10px;
+  z-index: 1;
+}
+
+.banner-actions-btn {
+  color: var(--white);
+  font-size: var(--fs-6);
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.banner-actions-btn ion-icon {
+  font-size: 16px;
+}
+
+.banner-actions-btn:first-child {
+  margin-right: auto;
+}
+
+.banner-actions-btn:is(:hover, :focus) {
+  color: var(--orange-soda);
+}
+
+.unit-card .card-content {
+  padding: 30px 15px 15px;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+.card-price {
+  color: var(--orange-soda);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-5);
+  margin-bottom: 5px;
+}
+
+.card-price strong {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
+
+.unit-card .card-title {
+  --font-weight: var(--fw-600);
+  margin-bottom: 15px;
+}
+
+.unit-card .card-title > a:is(:hover, :focus) {
+  color: var(--orange-soda);
+}
+
+.unit-card .card-text {
+  color: var(--cadet);
+  font-size: var(--fs-5);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.unit-card .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content within the card */
+  row-gap: 15px;
+}
+
+.unit-card .card-item {
+  padding-block: 5px;
+  color: var(--cadet);
+  font-size: var(--fs-5);
+}
+
+.unit-card .card-item:not(:last-child) {
+  padding-right: 15px;
+  border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+  margin-right: 20px;
+}
+
+.unit-card .card-item :is(strong, ion-icon) {
+  display: inline-block;
+}
+
+.unit-card .card-item ion-icon {
+  margin-left: 2px;
+  margin-bottom: -2px;
+}
+
+.unit-card .card-item span {
+  margin-top: 5px;
+}
