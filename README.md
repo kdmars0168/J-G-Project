@@ -1,57 +1,27 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/homeverse)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/homeverse?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/homeverse?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/6HZ4nZmU_pE?style=social)](https://youtu.be/6HZ4nZmU_pE)
+# J&G Real Estate — GitHub Pages build
 
-  <br />
-  <br />
-  
-  <img src="./readme-images/project-logo.png" />
+A responsive real-estate site deployed through GitHub Pages, using a GitHub Actions static-deploy workflow.
 
-  <h2 align="center">Homeverse - Real estate website</h2>
+**This is practice work.** The design comes from **[Homeverse by codewithsadee](https://github.com/codewithsadee/homeverse)**, an open-source template published under the MIT licence, and this repository still contains the original author's commit history from 2022. My commits from January 2024 onward customise it into a fictional agency, "J&G Real Estate". The design is not mine and is credited above.
 
-  Homeverse is fully responsive Real estate website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+A second version of the same exercise, without the upstream history, is at [J-GFinal](https://github.com/kdmars0168/J-GFinal).
 
-  <a href="https://codewithsadee.github.io/homeverse/"><strong>➥ Live Demo</strong></a>
+---
 
-</div>
+## What this repository covers
 
-<br />
+- Customising an existing responsive template — branding, content and imagery
+- Deploying a static site with **GitHub Actions** (`.github/workflows/static.yml`) to GitHub Pages
+- Working from a documented design system: the colour, typography, spacing and shadow scales are set out in [`style-guide.md`](style-guide.md)
 
-### Demo Screeshots
+## Stack
 
-![homeverse Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-![homeverse Mobile Demo](./readme-images/mobile.png "Mobile Demo")
+Plain HTML, CSS and JavaScript — no framework, no build step. Ionicons and Google Fonts (Nunito Sans, Poppins).
 
-### Prerequisites
+## Running it
 
-Before you begin, ensure you have met the following requirements:
+Clone the repository and open `index.html` in a browser.
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## Credit and licence
 
-### Run Locally
-
-To run **Homeverse** locally, run this command on your git bash:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/homeverse.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/homeverse.git
-```
-
-### Contact
-
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-### License
-
-This project is **free to use** and does not contains any license.
+Built on [Homeverse](https://github.com/codewithsadee/homeverse) by [codewithsadee](https://github.com/codewithsadee), used under the MIT licence. Please credit the original author rather than this repository if you reuse the design.
